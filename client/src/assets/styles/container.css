@@ -1,0 +1,11 @@
+.container{
+    margin-left: 196px;
+    margin-right: 194px;
+    padding-top: 60px;
+    max-width: 1280px;
+    height: 732px;
+    display: flex;
+}
+.children{
+    width: 100%;
+}
