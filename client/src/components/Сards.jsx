@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../assets/styles/card.css'
 import phone from '../assets/images/phone.png'
 import email from '../assets/images/email.png'

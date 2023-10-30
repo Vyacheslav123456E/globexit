@@ -18,11 +18,7 @@ const Index = () => {
         setItemUser(e)
         setIsModalOpen(true);
     };
-    const handleCancel = () => {
-        setIsModalOpen(false);
-    };
     const handleChangeSearch = (event) => {
-        //console.log(event.target.value.toString().length)
         if (event.target.value.toString().length > 0) {
             setSearchTerm(event.target.value);
             dispatch(UserFilter(event.target.value))
@@ -39,7 +35,7 @@ const Index = () => {
             .unwrap().then((response) => {
                 setDataUsers(response)
             }).catch((error) => {console.log(error)})
-    }, []);
+    }, [dispatch]);
 
     return (
         <Container>

@@ -8,10 +8,10 @@ const ModalUser = ({active, setIsModalOpen, itemUser}) => {
 
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setIsModalOpen(false)}>
-            <div className={'modal-content'}>
+            <div className={active ? 'modal-content active' : 'modal-content'}>
                 <div className={'modal-title'}>
                     <span>{itemUser.name}</span>
-                    <img src={close} alt="phone" onClick={() => setIsModalOpen(false)}/>
+                    <img src={close} alt="phone" className={'close-img'} onClick={() => setIsModalOpen(false)}/>
                 </div>
                 <div className={'modal-box'}>
                   <div className={'modal-info'}>
